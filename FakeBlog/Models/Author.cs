@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+
+//Getting rid of Author because ApplicationUser should accomplish this item
+/*
 namespace FakeBlog.Models
 {
     public class Author
@@ -16,3 +19,4 @@ namespace FakeBlog.Models
         public List<Post> Posts { get; set; }
     }
 }
+*/

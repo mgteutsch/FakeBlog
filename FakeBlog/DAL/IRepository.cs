@@ -18,7 +18,7 @@ namespace FakeBlog.DAL
          */
 
         //Create
-        void AddPost(string postTitle, ApplicationUser postOwner);
+        void AddPost(string postTitle, ApplicationUser authorName, DateTime datePostedToPublic, string postBodyContent);
         // ApplicationUser is contained in Models.IndentityModels
         // The ApplicationUser in this case is the author/writer of the Post
 
@@ -27,7 +27,7 @@ namespace FakeBlog.DAL
         Post GetPost(int postId);
 
         //Update
-        bool EditPost(int postId);
+        bool EditPost(int postId, string newTitle, string newBody);
 
         //Delete
         // Using bool here to confirm whether a delete was successful or not

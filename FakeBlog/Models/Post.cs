@@ -18,5 +18,7 @@ namespace FakeBlog.Models
         public bool IsDraft { get; set; }
         public bool Edited { get; set; }
         public string URL { get; set; }
+
+        public ApplicationUser Author { get; set; }
     }
 }
